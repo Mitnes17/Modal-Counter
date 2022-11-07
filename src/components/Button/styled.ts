@@ -11,7 +11,7 @@ export const Button = styled.button<StyleProps>`
   background-color: ${({ $color }) => $color};
   border: none;
   border-radius: 4px;
-  transition: 0.3s linear;
+  transition: 0.3s;
   font-size: 25px;
   text-transform: uppercase;
   transition: 1s;
@@ -19,7 +19,7 @@ export const Button = styled.button<StyleProps>`
 
   &:hover {
     color: black;
-    transition: 0.5s linear;
+    transition: 0.3s;
     background-color: ${({ $hoverColor }) => $hoverColor};
   }
 `;
