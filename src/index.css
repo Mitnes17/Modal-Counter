@@ -10,3 +10,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+}
