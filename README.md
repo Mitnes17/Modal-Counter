@@ -1,3 +1,17 @@
+#Modal Counter with Button control
+
+A small pretty project with mouse or button control
+
+Technology stack:
+
+-React
+
+-Styled Components
+
+-TypeScript
+
+You can see it on vercel: https://modal-counter.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
