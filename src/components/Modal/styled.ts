@@ -18,13 +18,43 @@ export const Modal = styled.div`
   z-index: 2;
   cursor: pointer;
 
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(-50% + 10px);
+    right: -50%;
+    padding: 3px 7px;
+    border-radius: 10px;
+    background-color: gray;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: inherit;
+    text-transform: none;
+    pointer-events: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   &:hover {
     background-color: #ff4e0d;
     transition: 0.3s;
+
+    &::after {
+      opacity: 1;
+      transition: 0.3s;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 
   &.hidden {
     opacity: 0;
+    pointer-events: none;
     transition: 0.4s;
   }
 `;

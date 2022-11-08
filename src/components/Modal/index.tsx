@@ -10,6 +10,7 @@ export const Modal: FC<Props> = ({ isCounter, isHidden }) => {
     <S.Modal
       onClick={active}
       className={isHidden ? 'hidden' : ''}
+      data-title='Or press "Enter"'
     >
       <S.Image>
         <img

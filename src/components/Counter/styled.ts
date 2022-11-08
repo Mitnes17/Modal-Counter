@@ -78,5 +78,25 @@ export const Close = styled.button`
       background-color: red;
       transition: 0.3s;
     }
+
+    span {
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
+
+  span {
+    position: absolute;
+    top: -10px;
+    right: -130px;
+    padding: 3px 7px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    opacity: 0;
+    font-size: 14px;
+    transition: 0.3s;
+    text-transform: none;
+    pointer-events: none;
   }
 `;
