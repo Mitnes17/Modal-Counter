@@ -5,7 +5,7 @@ import * as S from './styled';
 
 export const Counter: FC<Props> = ({ isCounter, isShown }) => {
   const [count, setCount] = useState(0);
-  //
+
   const buttons = useMemo(
     () => ({
       Escape: () => isCounter(false),
