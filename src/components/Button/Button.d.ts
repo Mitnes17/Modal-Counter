@@ -7,6 +7,6 @@ export type StyleProps = {
 
 export type Props = StyleProps & {
   text: string;
-  onClick: any;
+  onClick: () => void;
   dataTitle: string;
 };

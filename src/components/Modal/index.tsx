@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import cat from '../../svg/cat.svg';
 import { Props } from './Modal';
 import * as S from './styled';
 
@@ -14,7 +13,7 @@ export const Modal: FC<Props> = ({ isCounter, isHidden }) => {
     >
       <S.Image>
         <img
-          src={cat}
+          src={require('../../svg/cat.svg').default}
           alt='cat'
         />
       </S.Image>

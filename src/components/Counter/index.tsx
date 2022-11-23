@@ -1,4 +1,4 @@
-import { useState, FC, useEffect, useCallback, useMemo } from 'react';
+import { useState, FC, useEffect, useCallback, useMemo, SyntheticEvent } from 'react';
 import { Button } from '../Button';
 import { Props } from './Counter';
 import * as S from './styled';
@@ -18,7 +18,7 @@ export const Counter: FC<Props> = ({ isCounter, isShown }) => {
   );
 
   const buttonsControl = useCallback(
-    (e: any) => buttons[e.code as keyof typeof buttons]?.(),
+    (e: KeyboardEvent) => buttons[e.code as keyof typeof buttons]?.(),
     [buttons]
   );
 

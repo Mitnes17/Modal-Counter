@@ -6,7 +6,7 @@ import { Modal } from './components/Modal';
 function App() {
   const [state, setState] = useState(false);
 
-  const isCounter = (isActive: any) => setState(isActive);
+  const isCounter = (isActive: boolean) => setState(isActive);
 
   return (
     <div className='App'>

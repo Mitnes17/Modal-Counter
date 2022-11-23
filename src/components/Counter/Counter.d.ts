@@ -1,4 +1,4 @@
 export type Props = {
-  isCounter: any;
+  isCounter: (e: boolean) => void;
   isShown: boolean;
 };
